@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Hacking - Contact</title>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <!-- Mi CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/f5844bcbd3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a class="title" href="../index.html"><img src="../img/logo.png" alt="Logo"
+                            class="imgLogo">Happy Hacking</a></li>
+                <li class="item"><a class="links" href="../index.html">Inicio</a></li>
+                <li class="item"><a class="links" href="./aboutUs.html">Nosotros</a></li>
+                <li class="item"><a class="links" href="./services.html">Servicios</a></li>
+                <li class="item"><a class="links" href="#form.html">Contacto</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars icon"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <section class="inlineBlock">
+            <div class="contactContainer">
+                <h3>Completá el formulario y a la brevedad te remitiremos la cotización del servicio deseado.</h3>
+            </div>
+
+            <form id="form" class="form inlineBlockHijo">
+                <p><label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" size="30" maxlength="15" placeholder="Escriba su nombre..."
+                        required>
+                </p>
+
+                <p><label for="mail">Correo Electrónico:</label>
+                    <input type="email" name="mail" id="mail" placeholder="Escriba su mail..." required>
+                </p>
+
+                <p><label for="telphone">Teléfono:</label>
+                    <input type="number" name="telphone" id="telphone" placeholder="Escriba su teléfono...">
+                </p>
+
+                <p><label for="services">Seleccione el servicio deseado:</label>
+                    <select id="services" name="services">
+                        <option value="...">...</option>
+                        <option value="Diseño Web">Diseño Web</option>
+                        <option value="Desarrollo Web">Desarrollo Web</option>
+                        <option value="Servicios complementarios">Servicios complementarios</option>
+                        <option value="Todos los servicios">Todos los servicios</option>
+                    </select>
+                </p>
+
+                <p><label for="message">Describa su proyecto:</label>
+                    <textarea id="message" type="text" placeholder="Escriba su mensaje y/o consulta..." cols="40"
+                        rows="5" minlength="5" maxlength="240"></textarea>
+                </p>
+                <div class="center">
+                    <input type="submit" value="Enviar" class="btn btnSend">
+                </div>
+            </form>
+
+            <div class="contactContainer inlineBlockHijo1">
+                <hr>
+                <h3 class="contactContainer_text"><i class="fa-solid fa-location-dot"> </i> Buenos Aires, Argentina</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.39608342806!2d-58.57304165927266!3d-34.615461508170945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1652881692608!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="contactContainer_text"><i class="fa-solid fa-calendar-days"></i> Lunes a Viernes de 9 a 18hs
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__left">
+            <p class="footer__contact-title">Happy Hacking ®️</p>
+            <p><a class="socialLinks" href="mailto:info@happyhacking.com">info@happyhacking.com</a></p>
+        </div>
+        <div>
+            <ul class="socialLinks__list">
+                <li class="socialLinks__listItem"><a class="socialLinks__link"
+                        href="https://api.whatsapp.com/send?phone=541158125574"><i class="fab fa-whatsapp"></i></a>
+                </li>
+                <li class="socialLinks__listItem"><a class="socialLinks__link"
+                        href="https://www.facebook.com/happyhacking"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="socialLinks__listItem"><a class="socialLinks__link"
+                        href="https://www.instagram.com/happyhacking/"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script src="../js/form.js"></script>
+</body>
+
+</html>
